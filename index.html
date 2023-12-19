@@ -1,0 +1,51 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="layout.css">
+    <title></title>
+    <!--1、在head中引入-->
+
+</head>
+<body id="container">
+    <img src="temp.gif"  style="width:1000px;height:1000px; padding-top: 5%; z-index: 4; position:fixed;" id="startImg" hidden>
+    <div>
+        <div id="input-layer">
+            <img src="title.png" style="width:800px;height:250px;padding-top: 10%; left: 10%;position:relative;">
+            <fieldset style="width:500px; left: 25%;position:relative; top: 40px">
+                <legend >怡庭交答案了!</legend>
+                    
+                <div class="standard">
+                    <p style="font-size:30px;  text-align: center;" >請輸入答案(10個英文字):</p>
+                    <input type="text" id="ipt_answer" name="ipt_answer" style="font-size:200% ; text-align: center;display: block;
+                    margin: 0 auto; margin-bottom: 5%;" >  
+                     <button class="button-17"style="font-size:30px;text-align: center;display: block;margin: 0 auto;"id="sendAns"class="btn_style">送出</button>
+                </div>
+                    
+            
+            </fieldset>
+        </div>
+        <div id="error-layer" hidden>
+            <fieldset style="width:500px;">
+                <legend >怡庭答錯了!</legend>
+                    
+                <div class="standard">
+                    <p style="font-size:30px;  text-align: center;" id="errorMessage" >錯了啦QAQ</p>
+                    <p style="font-size:20px;  text-align: center;">錯誤的題目有:</p>
+                    <p style="font-size:20px;  text-align: center;" id="errorTopic" >Q</p>
+                
+                </div>
+                    
+            
+            </fieldset>
+        </div>
+        <div id="success-layer">
+        </div>
+        <div id="balloon-container">
+        </div>
+        
+    </div>
+    <script src="function.js"></script>
+</body>
+</html>
+

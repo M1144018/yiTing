@@ -40,11 +40,11 @@ function getRandomStyles() {
 //   }
 // }
 
-function createBalloons(num) {
+function createBalloons(num,src) {
   for (var i = num; i > 0; i--) {
     var balloon = document.createElement("img");
     balloon.className = "balloon";
-    balloon.src="1.png";
+    balloon.src=src;
     balloon.style.cssText = getRandomStyles();
     balloonContainer.append(balloon);
   }
@@ -76,10 +76,12 @@ btn_sendAns.addEventListener("click",() =>{
       p_errorTopic.innerText=errorString
       div_error.hidden=false;
       div_input.hidden=true;
+      createBalloons(30,'src/1.png')
       setTimeout(function(){
         div_error.hidden=true;
         div_input.hidden=false;
-      },3000)
+        removeBalloons()
+      },1000*errorCount)
       
     }
     

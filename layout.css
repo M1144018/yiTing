@@ -79,15 +79,15 @@ body {
 
 fieldset {
     font-family: sans-serif;
-    border: 5px solid #1F497D;
-    background: #ffffff;
+    border: 5px solid #edc7f0;
+    background: #fae9fa;
     border-radius: 5px;
     padding: 15px;
 }
 
 fieldset legend {
-    background: #1F497D;
-    color: #fff;
+    background: #edc7f0;
+    color: #000000;
     padding: 5px 10px ;
     font-size: 40px;
     border-radius: 5px;
@@ -143,6 +143,14 @@ input[type="password"]:focus {
   z-index: 3;
 }
 
+#success-layer{
+  position: fixed; /* 新增這一行 */
+  align-items: center;
+  left: 22%;
+  top:30%;
+  z-index: 3;
+}
+
 #balloon-container {
   position: relative; /* 新增這一行 */
   z-index: 1;
@@ -157,8 +165,8 @@ input[type="password"]:focus {
 
 .balloon {
   z-index: 1;
-  height: 125px;
-  width: 105px;
+  height: 275px;
+  width: 255px;
   border-radius: 75% 75% 70% 70%;
   position: relative;
 }

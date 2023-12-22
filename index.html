@@ -9,14 +9,15 @@
 </head>
 <body id="container">
     <img src="src/start.gif"  style="width:1000px;height:1000px; padding-top: 5%; z-index: 4; position:fixed;" id="startImg" hidden>
+    <img src="src/final.gif"  style="width:1000px;height:1000px; padding-top: 5%; z-index: 4; position:fixed;" id="finalImg" hidden>
     <div>
         <div id="input-layer">
-            <img src="src/title.png" style="width:800px;height:300px;padding-top: 10%; left: 10%;position:relative;">
+            <img src="src/title.png" style="width:800px;height:300px;padding-top: 10%; left: 10%;position:relative; border-radius: 30px;">
             <fieldset style="width:500px; left: 25%;position:relative; top: 40px">
                 <legend >怡庭交答案了!</legend>
                     
                 <div class="standard">
-                    <p style="font-size:30px;  text-align: center;" >請輸入答案(10個英文字):</p>
+                    <p style="font-size:30px;  text-align: center;" >請輸入答案(9個英文字):</p>
                     <input type="text" id="ipt_answer" name="ipt_answer" style="font-size:200% ; text-align: center;display: block;
                     margin: 0 auto; margin-bottom: 5%;" >  
                      <button class="button-17"style="font-size:30px;text-align: center;display: block;margin: 0 auto;"id="sendAns"class="btn_style">送出</button>
@@ -39,7 +40,18 @@
             
             </fieldset>
         </div>
-        <div id="success-layer">
+        <div id="success-layer"hidden>
+            <fieldset style="width:500px;">
+                <legend >怡庭大成功!</legend>
+                    
+                <div class="standard">
+                    <p style="font-size:30px;  text-align: center;" id="errorMessage" >趕快跟紹宇拿禮物吧~~~~</p>
+                    
+                
+                </div>
+                    
+            
+            </fieldset>
         </div>
         <div id="balloon-container">
         </div>
